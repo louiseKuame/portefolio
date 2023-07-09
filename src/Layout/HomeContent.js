@@ -1,6 +1,9 @@
-import React from "react";
+
+
 
 function HomeContent(){
+
+
 	return (
 		<>
 			<section id="about" className="container-fluid">
@@ -111,6 +114,41 @@ function HomeContent(){
 		        </div>
 		    </section>
 
+		     <section id="education">
+		        <div className="container">
+		            <div className="red-divider"></div>
+		            <div className="heading">
+		                <h2>Education</h2>
+		            </div>
+		            <div className="row">
+		                <div className="col-sm-6">
+		                    <div className="education-block">
+		                        <h5>2002 - 2006</h5>
+		                        <span className="glyphicon glyphicon-education"></span>
+		                        <h3>École Polytechnique - Paris</h3>
+		                        <h4>Diplôme d'ingénieur informatique</h4>
+		                        <div className="red-divider"></div>
+		                        <p>Intelligence Artificielle</p>
+		                        <p>Système d'informations</p>
+		                    </div>
+		                </div>
+		                <div className="col-sm-6">
+		                    <div className="education-block">
+		                        <h5>2007</h5>
+		                        <span className="glyphicon glyphicon-education"></span>
+		                        <h3>Apprendre-a-coder.com</h3>
+		                        <h4>Formation online "Développeur Web"</h4>
+		                        <div className="red-divider"></div>
+		                        <p>HTML/CSS, Javascript, JQuery</p>
+		                        <p>Responsive Design</p>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+
+		    </section>
+
+
 		    <section id="skills">
 		        <div className="red-divider"></div>
 		        <div className="heading">
@@ -157,40 +195,7 @@ function HomeContent(){
 		        </div>
 		    </section>
 
-		    <section id="education">
-		        <div className="container">
-		            <div className="red-divider"></div>
-		            <div className="heading">
-		                <h2>Education</h2>
-		            </div>
-		            <div className="row">
-		                <div className="col-sm-6">
-		                    <div className="education-block">
-		                        <h5>2002 - 2006</h5>
-		                        <span className="glyphicon glyphicon-education"></span>
-		                        <h3>École Polytechnique - Paris</h3>
-		                        <h4>Diplôme d'ingénieur informatique</h4>
-		                        <div className="red-divider"></div>
-		                        <p>Intelligence Artificielle</p>
-		                        <p>Système d'informations</p>
-		                    </div>
-		                </div>
-		                <div className="col-sm-6">
-		                    <div className="education-block">
-		                        <h5>2007</h5>
-		                        <span className="glyphicon glyphicon-education"></span>
-		                        <h3>Apprendre-a-coder.com</h3>
-		                        <h4>Formation online "Développeur Web"</h4>
-		                        <div className="red-divider"></div>
-		                        <p>HTML/CSS, Javascript, JQuery</p>
-		                        <p>Responsive Design</p>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-
-		    </section>
-
+		   
 
 		    <section id="portfolio">
 		        <div className="container">
@@ -215,23 +220,7 @@ function HomeContent(){
 		                    </a>
 		                </div>
 		            </div>
-		            <div className="row">
-		                <div className="col-sm-4">
-		                    <a className="thumbnail" href="http://www.google.com" target="_blank">
-		                        <img src="images/youtube.png" alt="youtube" />
-		                    </a>
-		                </div>
-		                <div className="col-sm-4">
-		                    <a className="thumbnail" href="http://www.twitter.com" target="_blank">
-		                        <img src="images/twitter_retweet.png" alt="twitter retweet" />
-		                    </a>
-		                </div>
-		                <div className="col-sm-4">
-		                    <a className="thumbnail" href="http://www.facebook.com" target="_blank">
-		                        <img src="images/facebook_video.png" alt="facebook video" />
-		                    </a>
-		                </div>
-		            </div>
+		            
 
 		        </div>
 

@@ -416,6 +416,7 @@ footer h5 {
     width: 70%;
     padding: 30px;
     margin: 0 auto;
+    text-align: left;
     border: #d82c2e 1px solid;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -424,8 +425,8 @@ footer h5 {
     -o-border-radius: 10px;
 }
 
-#contact-form input {
-    margin-bottom: 15px
+#contact-form label {
+    margin-top: 15px
 }
 
 #contact-form .button {

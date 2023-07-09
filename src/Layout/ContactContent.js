@@ -1,6 +1,31 @@
+import { useState } from 'react';
+import ValidateForm from "./ValidateForm";
 
 
-export default function ContactContent(){
+
+function ContactContent(){
+
+	const [values, setValues] = useState({
+		lastName: "",
+		firstName: "",
+		email : "",
+		object : "",
+		message : ""
+	})
+
+	const [errors, setErrors] = useState({});
+
+	function handleInput(event){
+		const newObj = {...values, [event.target.name] : event.target.value };
+		console.log(newObj);
+		setValues(newObj);
+	}
+
+	function handleValidation(event){
+		event.preventDefault();
+		setErrors(ValidateForm(values));
+	}
+
 	return (
 		<>
 			 <section id="contact">
@@ -30,30 +55,35 @@ export default function ContactContent(){
 
 
 		                </div>
-		                <form>
+		                <form onSubmit={ handleValidation }>
 		                    <div className="row">
 		                        <div className="col-md-6 col-lg-4">
 		                            <label>Nom</label>
-		                            <input type="text" className="form-control" />
+		                            <input type="text" name="lastName" className="form-control"  onChange={ handleInput } />
+		                            { errors.lastName && <p style={{ color: "red"}}> { errors.lastName }</p> }
 		                        </div>
 		                        <div className="col-md-6 col-lg-4">
 		                            <label>Prénom(s)</label>
-		                            <input type="text" className="form-control" />
+		                            <input type="text" name="firstName" className="form-control"  onChange={ handleInput } />
+		                            { errors.firstName && <p style={{ color: "red"}}> { errors.firstName }</p> }
 		                        </div>
 
 		                        <div className="col-md-6 col-lg-4">
 		                            <label>Email</label>
-		                            <input type="text" className="form-control" />
+		                            <input type="text" name="email" className="form-control" onChange={ handleInput } />
+		                            { errors.email && <p style={{ color: "red"}}> { errors.email }</p> }
 		                        </div>
 
 		                        <div className="col-md-12 col-lg-12">
 		                            <label>Object</label>
-		                            <input type="text" className="form-control" />
+		                            <input type="text" name="object" className="form-control" onChange={ handleInput } />
+		                            { errors.object && <p style={{ color: "red"}}> { errors.object }</p> }
 		                        </div>
 
 		                        <div className="col-md-12 col-lg-12">
 		                            <label>Message</label>
-		                            <textarea className="form-control" rows="6"></textarea>
+		                            <textarea className="form-control" onChange={ handleInput } name="message" rows="6" ></textarea>
+		                            { errors.message && <p style={{ color: "red"}}> { errors.message }</p> }
 		                        </div>
 
 		                        <div className="col-md-12 col-lg-12" >
@@ -74,3 +104,5 @@ export default function ContactContent(){
 
 	)
 }
+
+export default ContactContent;

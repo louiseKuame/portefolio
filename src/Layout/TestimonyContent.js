@@ -7,7 +7,7 @@ export default function TestimonyContent(){
 	        <div className="container">
 	            <div className="red-divider"></div>
 	            <div className="heading">
-	                <h2>Recommandations</h2>
+	                <h2>Témoignages</h2>
 	            </div>
 	            <div id="myCarousel" className="carousel slide text-center" data-ride="carousel">
 	                <ol className="carousel-indicators">
