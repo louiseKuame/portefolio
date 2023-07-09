@@ -47,38 +47,88 @@
         <div class="container">
             <div class="red-divider"></div>
             <div class="heading">
-                <h2>Recommandations</h2>
+                <h2>Temoignages</h2>
             </div>
-            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <h3>"John t'es le meilleur! Merci pour tout..."</h3>
-                        <h4>Larry Page, Google Co-Founder</h4>
-                    </div>
-                    <div class="item">
-                        <h3>"L'esprit le plus créatif que j'ai vu de toute ma vie..."</h3>
-                        <h4>Jack Dorsey, Twitter Founder and CEO</h4>
-                    </div>
-                    <div class="item">
-                        <h3>"Merci John de m'avoir appris à coder... Tout ça c'est grâce à toi!"</h3>
-                        <h4>Mark Zuckerberg, Facebook Founder and CEO</h4>
+
+            <div style="text-align:end">
+
+                <button class="btn" data-toggle="modal" data-target="#myModal"><div class="glyphicon glyphicon-plus"></div> Ajouter un temoignage</button>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-testimony">
+                        <h3>Olivier essau</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit harum minus est deleniti inventore ea distinctio, debitis molestias amet quae ipsum nostrum asperiores dolor vitae dicta possimus! Facere, debitis labore.
+                        </p>
                     </div>
                 </div>
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev" role="button">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next" role="button">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-testimony">
+                        <h3>Olivier essau</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit harum minus est deleniti inventore ea distinctio, debitis molestias amet quae ipsum nostrum asperiores dolor vitae dicta possimus! Facere, debitis labore.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-testimony">
+                        <h3>Olivier essau</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit harum minus est deleniti inventore ea distinctio, debitis molestias amet quae ipsum nostrum asperiores dolor vitae dicta possimus! Facere, debitis labore.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-testimony">
+                        <h3>Olivier essau</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit harum minus est deleniti inventore ea distinctio, debitis molestias amet quae ipsum nostrum asperiores dolor vitae dicta possimus! Facere, debitis labore.
+                        </p>
+                    </div>
+                </div>
+
 
             </div>
 
-        </div>
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Laisser un temoignage</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-12">
+                                        <label>Nom & Prénom(s)</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+
+                                    <div class="col-md-12 col-lg-12">
+                                        <label>Temoignage</label>
+                                        <textarea class="form-control" rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                                    <button type="submit " class="btn btn-primary">Enregistrer</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
 
 
     </section>
