@@ -39,7 +39,7 @@ section .heading h2 {
 .red-divider {
     width: 100px;
     height: 2px;
-    background: #d82c2e;
+    background: #030303;
     margin: 0 auto;
 }
 
@@ -54,7 +54,7 @@ section .heading h2 {
 /* MENU */
 
 .navbar {
-    background: #d82c2e;
+    background: #090909;
     font-size: 12px;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -94,7 +94,7 @@ section .heading h2 {
 
 #about {
     padding-top: 100px;
-    background: #d82c2e;
+    background: #090808;
 }
 
 .profile-picture {
